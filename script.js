@@ -62,6 +62,7 @@ function showDataToUser(data) {
     let currencySymbol = countryDetails.currencies[currencyKey].symbol;
 
     resultContainer.innerHTML = `
+    <div class='padding'>
         <h2>Country Name: <span>${countryName}</span></h2>
         <img src="${flag}" alt="${flagALt}">
         <div class="country-details">
@@ -71,6 +72,8 @@ function showDataToUser(data) {
             <p><strong>Currency:</strong> ${currencyName} <strong>Symbol:</strong> ${currencySymbol}</p>
             <p><strong>Capital:</strong> ${capital}</p>
         </div>
+                </div>
+
     `;
 }
 
